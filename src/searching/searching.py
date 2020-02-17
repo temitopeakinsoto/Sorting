@@ -1,9 +1,15 @@
 # STRETCH: implement Linear Search				
-def linear_search(arr, target):
-  
+def linear_search(arr, target):  
   # TO-DO: add missing code
+  for item in arr:
+    if item == target:
+      return f"{item} was found in the list"
 
-   return -1   # not found
+  return -1   # not found
+
+list_items = ["issp", "top", "Shoe", "Temp", "top", "Shoe"]
+targ = "iss"
+print(linear_search(list_items, targ))
 
 
 # STRETCH: write an iterative implementation of Binary Search 
