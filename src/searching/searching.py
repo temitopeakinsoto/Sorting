@@ -1,14 +1,13 @@
 # STRETCH: implement Linear Search				
 def linear_search(arr, target):  
   # TO-DO: add missing code
-  for item in arr:
+  for (index, item) in enumerate(arr):
     if item == target:
-      return f"{item} was found in the list"
-
+      return index
   return -1   # not found
 
 list_items = ["issp", "top", "Shoe", "Temp", "top", "Shoe"]
-targ = "iss"
+targ = "issp"
 print(linear_search(list_items, targ))
 
 
